@@ -66,7 +66,7 @@ ul {
 img {
     width: 3rem;
     height: 3rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     object-fit: contain ;
 }
 
