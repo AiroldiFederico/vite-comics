@@ -7,17 +7,15 @@ import Footer from "./components/Footer.vue"
 </script>
 
 <template>
-  <div>
-    <NavBar/>
-    <Core/>
-    <Info/>
-    <OtherSites/>
-    <Footer/>
-  </div>
+  <NavBar/>
+  <Core/>
+  <Info/>
+  <OtherSites/>
+  <Footer/>
 </template>
 
-<style scoped>
-
+<style lang="scss">
+@use "./style/main.scss" as *;
 
 
 
