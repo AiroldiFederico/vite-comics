@@ -35,7 +35,7 @@
 
 .main {
     background-color: black;
-    padding: 3rem;
+    padding: 3rem 0rem;
     h2 {
         color: white;
         font-weight: bold;

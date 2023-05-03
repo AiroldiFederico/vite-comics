@@ -47,7 +47,7 @@ name: "NavBar",
 
 .main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 0.7rem;
     border-bottom: solid black 1px;
