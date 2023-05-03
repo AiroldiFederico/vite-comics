@@ -7,6 +7,7 @@
         },
         data(){
             return{
+                placeholder: "--> Content goes here <--",
 
             }
         },
@@ -21,8 +22,8 @@
 
 
 <template>
-<div>
-    <p>Core</p>
+<div class="main">
+    <h2> {{ placeholder }} </h2>
 </div>
 </template>
 
@@ -30,8 +31,15 @@
 
 
 
-<style scoped>
+<style lang="scss" scoped>
 
-
+.main {
+    background-color: black;
+    padding: 3rem;
+    h2 {
+        color: white;
+        font-weight: bold;
+    }
+}
 
 </style>
