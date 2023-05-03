@@ -5,17 +5,17 @@ export default {
 name: "NavBar",
   data() {
     return {
-      sections: [
-        "characters",
-        "comics",
-        "movies",
-        "tv",
-        "games",
-        "collectibles",
-        "video",
-        "fans",
-        "news",
-        "shop"
+        sections: [
+        { name: "characters", active: false },
+        { name: "comics", active: false },
+        { name: "movies", active: true },
+        { name: "tv", active: false },
+        { name: "games", active: false },
+        { name: "collectibles", active: false },
+        { name: "video", active: false },
+        { name: "fans", active: false },
+        { name: "news", active: false },
+        { name: "shop", active: false }
       ]
     };
   }
@@ -31,8 +31,8 @@ name: "NavBar",
         <div><img src="\img\dc-logo.png" alt=""></div>
         <nav>
             <ul>
-                <li v-for="(section, index) in sections" :key="index">
-                    <a href="#">{{ section }}</a>
+                <li v-for="(section, index) in sections" :key="index" :class="{ 'active': section.active }">
+                    <a href="#">{{ section.name }}</a>
                 </li>
             </ul>
         </nav>
@@ -76,9 +76,17 @@ ul {
                 border-bottom: #0282f9 solid 4px;
                 color: #0282f9;
             }
+            &.active {
+                // border-bottom: #0282f9 solid 4px !important;
+                 color: #0282f9 !important;
+             }
+         }
+            
         }
+
     }
-}
+
+
 
 
 
