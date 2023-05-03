@@ -12,6 +12,7 @@
                     { text: 'DC Merchandising', image: '/img/buy-comics-merchandise.png' },
                     { text: 'Subscription', image: '/img/buy-comics-subscriptions.png' },
                     { text: 'Comic Shop Locator', image: '/img/buy-comics-shop-locator.png' },
+                    { text: 'Dc Power Visa', image: '/img/buy-dc-power-visa.svg' },
                 ]
 
             }
@@ -57,7 +58,7 @@ ul {
     align-items: center;
 
     li {
-        margin: 0 2rem;
+        margin: 0 3rem;
         text-transform: uppercase;
         font-weight: normal;
     }
