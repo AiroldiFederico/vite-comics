@@ -50,22 +50,23 @@
     <div class="main">
         <div class="lists">
             <ul>
-                <h3>DC COMICS</h3>
+                <h4>DC COMICS</h4>
               <li v-for="item in list1" :key="item">{{ item }}</li>
             </ul>
             <ul>
-                <h3> SHOP</h3>
+                <h4> SHOP</h4>
               <li v-for="item in list2" :key="item">{{ item }}</li>
             </ul>
             <ul>
-                <h3>DC</h3>
+                <h4>DC</h4>
               <li v-for="item in list3" :key="item">{{ item }}</li>
             </ul>
             <ul>
-                <h3>SITES</h3>
+                <h4>SITES</h4>
               <li v-for="item in list4" :key="item">{{ item }}</li>
             </ul>
         </div>
+        <img src="\img\dc-logo-bg.png" alt="">
     </div>
 </template>
 
@@ -75,8 +76,37 @@
 
 <style lang="scss" scoped>
 
-main {
+.main {
+    padding: 2rem 0rem;
+    background-image: url("/img/footer-bg.jpg");
+    color: white;
+    position: relative;
 
+    .lists {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 32%;
+        max-height: 25rem;
+    }
+
+    img {
+        position: absolute;
+        right: 2rem;
+        top: -4rem;
+    }
+}
+
+h4 {
+    font-weight: bolder;
+}
+
+ul {
+    margin-bottom: 2rem;
+    li {
+        font-weight: lighter;
+        margin-left: 0;
+    }
 }
 
 </style>
