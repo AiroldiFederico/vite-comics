@@ -47,7 +47,27 @@
 
     background-color:#0282f9ff ;
     color: white;
+    padding: 3rem 0;
+    
+}
 
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        margin: 0 2rem;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+}
+
+img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    object-fit: contain ;
 }
 
 </style>
