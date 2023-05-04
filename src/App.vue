@@ -7,11 +7,13 @@ import Footer from "./components/Footer.vue"
 </script>
 
 <template>
-  <NavBar/>
-  <Core/>
-  <Info/>
-  <OtherSites/>
-  <Footer/>
+  <div class="col-12 m-auto">
+    <NavBar/>
+    <Core/>
+    <Info/>
+    <OtherSites/>
+    <Footer/>
+  </div>
 </template>
 
 <style lang="scss">

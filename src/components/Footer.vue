@@ -29,14 +29,16 @@
 
 <template>
     <div class="main">
-        <div><a href="#">sign-up now</a></div>
-        <div>
-            <ul>
-                <p><a href="#">follow us</a></p>
-                <li v-for="(image, index) in images" :key="index">
-                  <img :src="image">
-                </li>
-            </ul>
+        <div class="col-10 m-auto">
+            <div><a href="#">sign-up now</a></div>
+            <div>
+                <ul>
+                    <p><a href="#">follow us</a></p>
+                    <li v-for="(image, index) in images" :key="index">
+                      <img :src="image">
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -49,10 +51,13 @@
 
 .main {
     background-color: rgb(49, 49, 49);
-    padding: 2rem 0rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    div {
+        padding: 0.7rem 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 a {

@@ -23,7 +23,9 @@
 
 <template>
 <div class="main">
-    <h2> {{ placeholder }} </h2>
+    <div class="col-10 m-auto">
+        <h2> {{ placeholder }} </h2>
+    </div>
 </div>
 </template>
 

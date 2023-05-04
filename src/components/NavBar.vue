@@ -27,7 +27,7 @@ name: "NavBar",
 
 
 <template>
-    <div class="main">
+    <div class="main col-10 m-auto">
         <div><img src="\img\dc-logo.png" alt=""></div>
         <nav>
             <ul>
@@ -49,14 +49,14 @@ name: "NavBar",
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 0.7rem;
+    padding: 0.7rem 0rem;
     border-bottom: solid black 1px;
-    padding-bottom: 0.7rem;
+
 }
 
 img {
     width: 4rem;
-    
+
 }
 
 ul {

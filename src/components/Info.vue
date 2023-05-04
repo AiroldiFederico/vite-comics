@@ -29,12 +29,14 @@
 
 <template>
     <div class="main">
-        <ul>
-            <li v-for="(item, index) in items" :key="index">
-              <img :src="item.image" alt="">
-              <span>{{ item.text }}</span>
-            </li>
-        </ul>
+        <div class="col-10 m-auto">
+            <ul>
+                <li v-for="(item, index) in items" :key="index">
+                  <img :src="item.image" alt="">
+                  <span>{{ item.text }}</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -54,13 +56,14 @@
 
 ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     li {
-        margin: 0 3rem;
+        
         text-transform: uppercase;
         font-weight: normal;
+        font-size: small;
     }
 }
 

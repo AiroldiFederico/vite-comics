@@ -48,25 +48,27 @@
 
 <template>
     <div class="main">
-        <div class="lists">
-            <ul>
-                <h4>DC COMICS</h4>
-              <li v-for="item in list1" :key="item">{{ item }}</li>
-            </ul>
-            <ul>
-                <h4> SHOP</h4>
-              <li v-for="item in list2" :key="item">{{ item }}</li>
-            </ul>
-            <ul>
-                <h4>DC</h4>
-              <li v-for="item in list3" :key="item">{{ item }}</li>
-            </ul>
-            <ul>
-                <h4>SITES</h4>
-              <li v-for="item in list4" :key="item">{{ item }}</li>
-            </ul>
+        <div class="col-10 m-auto">
+            <div class="lists">
+                <ul>
+                    <h4>DC COMICS</h4>
+                  <li v-for="item in list1" :key="item">{{ item }}</li>
+                </ul>
+                <ul>
+                    <h4> SHOP</h4>
+                  <li v-for="item in list2" :key="item">{{ item }}</li>
+                </ul>
+                <ul>
+                    <h4>DC</h4>
+                  <li v-for="item in list3" :key="item">{{ item }}</li>
+                </ul>
+                <ul>
+                    <h4>SITES</h4>
+                  <li v-for="item in list4" :key="item">{{ item }}</li>
+                </ul>
+            </div>
+            <img src="\img\dc-logo-bg.png" alt="">
         </div>
-        <img src="\img\dc-logo-bg.png" alt="">
     </div>
 </template>
 
@@ -86,14 +88,15 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        max-width: 32%;
+        max-width: 40%;
         max-height: 25rem;
     }
 
     img {
         position: absolute;
-        right: 2rem;
+        right: 6rem;
         top: -4rem;
+        z-index: 0;
     }
 }
 
