@@ -95,9 +95,12 @@
     img {
         position: absolute;
         right: 6rem;
-        top: -4rem;
-        z-index: 0;
+        top: -6rem;
+        width: 40%;
+        
     }
+
+    overflow: hidden;
 }
 
 h4 {
