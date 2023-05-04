@@ -104,10 +104,11 @@
 
     </div>
     <div class="col-10 m-auto">
-        <div id="slide">
+        <div id="slide" >
             <SliderComp  
             v-for="(item, index) in Slider" :key="index"
             :thumb="Slider[index].thumb"
+            :series="Slider[index].series"
              />
         </div>
     </div>
@@ -125,6 +126,11 @@
     
     #slide {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        border: dotted red;
+        color: white;
     }
     
 }

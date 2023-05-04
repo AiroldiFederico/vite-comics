@@ -34,6 +34,7 @@
     <div>
         <img :src="thumb" alt="">
         <!-- <img :src="item.thumb" alt="" v-for="(item, index) in sliderchild" :key="index"> -->
+        <span>{{series}}</span>
     </div>
 </template>
 
@@ -44,9 +45,17 @@
 <style lang="scss" scoped>
 
 div {
-    
+    width: calc(100% / 6);
+    padding: 1.2rem;
     img {
-        width: 5rem;
+        width: 100%;
+        aspect-ratio: 1;
+        margin-bottom: 1rem;
     }
+
+    span {
+        font-weight: normal;
+    }
+    
 }
 </style>
