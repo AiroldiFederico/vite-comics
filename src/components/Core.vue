@@ -121,7 +121,7 @@
             </div>
         </div>
         <div id="button">
-            <button @click="toggleShowPriceAndType">{{ showPriceAndType ? 'HIDE' : 'LOAD MORE' }}</button>
+            <button @click="toggleShowPriceAndType" class="btn btn-primary">{{ showPriceAndType ? 'HIDE' : 'LOAD MORE' }}</button>
         </div>
     </div>
 </template>
@@ -169,13 +169,7 @@
         display: flex;
         justify-content: center;
         button{
-            color: white;
             font-weight: bold;
-            background-color: #0282f9ff;
-            display: inline;
-            padding: 0.5rem 2rem;
-            border-radius: 4px;
-            border: none;
         }
     }
     

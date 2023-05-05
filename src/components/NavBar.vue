@@ -7,8 +7,8 @@ name: "NavBar",
     return {
         sections: [
         { name: "characters", active: false },
-        { name: "comics", active: false },
-        { name: "movies", active: true },
+        { name: "comics", active: true },
+        { name: "movies", active: false },
         { name: "tv", active: false },
         { name: "games", active: false },
         { name: "collectibles", active: false },
@@ -76,10 +76,10 @@ ul {
                 border-bottom: #0282f9 solid 4px;
                 color: #0282f9;
             }
-            &.active {
-                // border-bottom: #0282f9 solid 4px !important;
-                 color: #0282f9 !important;
-             }
+        }
+        &.active a {
+             border-bottom: #0282f9 solid 4px !important;
+             color: #0282f9 !important;
          }
             
         }
