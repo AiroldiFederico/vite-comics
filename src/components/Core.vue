@@ -86,6 +86,8 @@
                 },
               ],
 
+              showPriceAndType: false,
+
             }
         },
         methods: {
@@ -99,20 +101,26 @@
 
 
 <template>
-<div class="main">
-    <div>
-
-    </div>
-    <div class="col-10 m-auto">
-        <div id="slide" >
-            <SliderComp  
-            v-for="(item, index) in Slider" :key="index"
-            :thumb="Slider[index].thumb"
-            :series="Slider[index].series"
-             />
+    <div class="main">
+        <div id="jumbotron">
+            <p>CURRENT SERIES</p>
+        </div>
+        <div class="col-10 m-auto">
+            <div id="slide" >
+                <SliderComp  
+                v-for="(item, index) in Slider" :key="index"
+                :thumb="Slider[index].thumb"
+                :series="Slider[index].series"
+                :price="Slider[index].price"
+                :type="Slider[index].type"
+                :show-price-and-type="showPriceAndType"
+                />
+            </div>
+        </div>
+        <div id="button">
+            <button @click="showPriceAndType = true">LOAD MORE</button>
         </div>
     </div>
-</div>
 </template>
 
 
@@ -123,14 +131,49 @@
 
 .main {
     background-color: black;
+    padding-bottom: 1rem;
+
+    #jumbotron {
+        background-image: url('/img/jumbotron.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20rem;
+        margin-bottom: 2rem;
+        position: relative;
+
+        P {
+            color: white;
+            font-weight: bolder;
+            background-color: #0282f9ff;
+            display: inline;
+            padding: 0.5rem;
+            position: absolute;
+            bottom: -2.4rem;
+            left: 6rem;
+        }
+    }
     
     #slide {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        
-        border: dotted red;
         color: white;
+    }
+
+    #button {
+
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        button{
+            color: white;
+            font-weight: bold;
+            background-color: #0282f9ff;
+            display: inline;
+            padding: 0.5rem 2rem;
+            border-radius: 4px;
+            border: none;
+        }
     }
     
 }
