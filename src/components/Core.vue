@@ -91,7 +91,10 @@
             }
         },
         methods: {
-            
+
+            toggleShowPriceAndType() {
+             this.showPriceAndType = !this.showPriceAndType;
+            }
         },
     }
     
@@ -118,7 +121,7 @@
             </div>
         </div>
         <div id="button">
-            <button @click="showPriceAndType = true">LOAD MORE</button>
+            <button @click="toggleShowPriceAndType">{{ showPriceAndType ? 'HIDE' : 'LOAD MORE' }}</button>
         </div>
     </div>
 </template>
